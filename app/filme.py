@@ -3,7 +3,7 @@
 class Filme(object):
 
     def __init__(self, nome, nota=0, observacao='Nenhuma observação.'):
-        self.nome = nome
+        self.verificaNomeVazio(nome)
         self.verificaNumeroNota(nota)
         self.observacao = observacao
 

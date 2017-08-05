@@ -16,6 +16,9 @@ class TestFilme(TestCase):
     def test_mostraNota(self):
         self.assertEqual(self.filme.mostraNota(), 6)
 
+    def test_mostraObservacao(self):
+        self.assertEqual(self.filme.mostraObservacao(), 'Nenhuma observação.')
+
     def test_nomeVazio(self):
         metodo = self.filme.verificaNomeVazio
         self.assertRaises(NomeDoFilmeVazioException, metodo, '')
